@@ -60,7 +60,7 @@ func dec() {
 
 	err = os.WriteFile(decWxapkgPath, originData, 0666)
 	if err != nil {
-		fmt.Println("写文件失败")
+		fmt.Println("写文件失败", err)
 		return
 	}
 	fmt.Println("解密成功")
